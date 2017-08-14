@@ -1,0 +1,10 @@
+<p class="question">You : <%= @question %></p>
+<p class="answer">Coach : <%= @answer %></p>
+
+<!-- need the = to show the div -->
+<%= link_to ask_path do %>
+  <div class="btn btn-warning">
+    Ask another question
+  </div>
+<% end %>
+

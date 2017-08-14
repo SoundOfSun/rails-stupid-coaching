@@ -1,0 +1,19 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 48px;
+}
+
+.question {
+  color: rgb(50,78,123);
+}
+.answer {
+ color: rgb(166,68,82);
+}
