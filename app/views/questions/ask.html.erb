@@ -1,9 +1,14 @@
-<h1>Questions#ask</h1>
-<p>Find me in app/views/questions/ask.html.erb</p>
-
 <!-- action send the request to the route /answer -->
-<form action="/answer">
-  <label for="question">Speak to your coach</label>
-  <input type="text" id="question" name="user_question" placeholder="what time is it?">
-  <input type="submit" value="Go on!">
-</form>
+<div class="ask-question">
+  <div class="banner" style="background-image: url('https://static.pexels.com/photos/416717/pexels-photo-416717.jpeg');">
+  </div>
+  <div class="ask-content">
+    <h2>Ask your coach any question !</h2>
+    <p>Stupid coaching is a simple game. You ask your coach a question, receive his stubborn answer, and ask again !</p>
+    <form action="/answer">
+      <label for="question">Speak to your coach</label>
+      <input type="text" id="question" name="user_question" placeholder="What time is it?">
+      <input type="submit" value="Ask Coach a question !" class="btn btn-primary btn-style">
+    </form>
+  </div>
+</div>

@@ -1,10 +1,18 @@
-<p class="question">You : <%= @question %></p>
-<p class="answer">Coach : <%= @answer %></p>
-
-<!-- need the = to show the div -->
-<%= link_to ask_path do %>
-  <div class="btn btn-warning">
-    Ask another question
+<div class="answer-question">
+  <h2>Your conversation</h2>
+  <p>Very short, yet so enriching...not.</p>
+  <div class="conversation">
+    <p class="question">You : <%= @question %></p>
+    <p class="answer">Coach : <%= @answer %></p>
   </div>
-<% end %>
+
+  <!-- need the = to show the div -->
+  <%= link_to ask_path do %>
+    <div class="btn btn-warning btn-size">
+      Ask another question
+    </div>
+  <% end %>
+
+  <p id="hint">Hint: To let your coach speechless, try and say 'i am going to work' next time ;)</p>
+</div>
 

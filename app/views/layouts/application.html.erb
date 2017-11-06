@@ -3,9 +3,11 @@
   <head>
     <title>RailsStupidCoaching</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Cabin:400,500,500i,700|Roboto:300,400,700|Cabin+Sketch:400,700" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <%= csrf_meta_tags %>
 
@@ -14,10 +16,8 @@
   </head>
 
   <body>
-    <div class="container text-center">
-      <h1>Stupid Coaching</h1>
-      <%= yield %>
-      <h3>A very simple footer</h3>
-    </div>
+    <%= render 'shared/navbar' %>
+    <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
 </html>
